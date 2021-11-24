@@ -17,4 +17,8 @@ public class Product {
 
     public Product() {
     }
+
+    public boolean matches(String search) {
+        return getName().toLowerCase().contains(search.toLowerCase());
+    }
 }
